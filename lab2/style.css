@@ -1,0 +1,44 @@
+* {
+  font-family: "Kodchasan", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(254, 231, 188, 0.53);
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+#title {
+  display: flex;
+  font-weight: 500;
+  font-size: 35px;
+  justify-content: center;
+  margin-top: 11px;
+}
+
+#header-menu {
+  display: flex;
+  gap: 52px;
+  width: 72%;
+  justify-content: center;
+  justify-self: center;
+  background-color: #eeeff1;
+  box-shadow: 2px 4px 44px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#header-menu li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+}
