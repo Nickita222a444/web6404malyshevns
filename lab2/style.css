@@ -1,6 +1,7 @@
 * {
   font-family: "Kodchasan", sans-serif;
   font-style: normal;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,4 +42,56 @@ body {
   list-style: none;
   font-weight: 500;
   font-size: 20px;
+}
+
+#greeting {
+  width: 570px;
+  background-color: #b1ddf1;
+  border-radius: 50px;
+  padding-left: 33px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  vertical-align: middle;
+  margin-top: 10vh;
+}
+
+#greeting-title {
+  display: block;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+#greeting-text {
+  font-size: 32px;
+}
+
+#catalogue-link {
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #b1ddf1;
+  border-radius: 50px;
+  padding: 20px 18px;
+  margin-top: 10000vh;
+  color: black;
+}
+
+#greeting + div {
+  margin-top: 60px;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#dog-img {
+  height: 600px;
+  margin-top: -40px;
 }
