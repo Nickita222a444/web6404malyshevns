@@ -1,0 +1,55 @@
+* {
+  font-family: "Kodchasan", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(254, 231, 188, 0.53);
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11px;
+}
+
+#title {
+  font-weight: 500;
+  font-size: 35px;
+}
+#search-line {
+  height: 45px;
+  width: 550px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 2px 4px 44px rgba(0, 0, 0, 0.25);
+  background: url("img/search-icon.svg") no-repeat 30px;
+  background-size: 20px;
+  background-color: #eeeff1;
+  font-size: 20px;
+
+  padding-left: 60px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#header-icons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  img {
+    height: 20px;
+  }
+}
