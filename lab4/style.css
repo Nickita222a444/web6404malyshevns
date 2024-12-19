@@ -38,9 +38,26 @@ body {
   margin-top: 10px;
 
   li {
+    cursor: pointer;
     list-style: none;
     font-weight: 500;
     font-size: 20px;
+    line-height: 1;
+  }
+
+  li::after {
+    display: block;
+    content: "";
+    height: 2.5px;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+    background-color: black;
+    border-radius: 40px;
+  }
+
+  li:hover:after,
+  li:focus:after {
+    width: 100%;
   }
 }
 
