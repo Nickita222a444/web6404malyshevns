@@ -1,7 +1,24 @@
 {
-  "/home": {
-    "get": {
-      "data": [{ "text": "Hello, bitch" }]
-    }
+  "/catalogue": {
+    "get": [
+      {
+        "name": "Colorful Dog Toy\n \"Doggy\"",
+        "price": "$2.30",
+        "image_path": "img/toy-doggy.svg",
+        "available": true
+      },
+      {
+        "name": "Dog Treat \"Yummy \nBones\"",
+        "price": "$0.50",
+        "image_path": "img/dog-treat.svg",
+        "available": true
+      },
+      {
+        "name": "Clothing \"GoodBoy\"",
+        "price": "$12.40",
+        "image_path": "img/dog-clothing.svg",
+        "available": false
+      }
+    ]
   }
 }
