@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="catalogue.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Catalogue | Paws & Tails</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <span id="title">Paws & Tails</span
+        ><input id="search-line" placeholder="Type something to search..." />
+        <div id="header-icons">
+          <img src="img/user-icon.svg" alt="" />
+          <img src="img/cart-icon.svg" alt="" />
+        </div>
+      </header>
+      <main>
+        <form id="filters-bar" action="/filter/" method="POST">
+          <span>Filters</span>
+          <div class="multiple-choice-filter">
+            <div class="filter-header">
+              <span class="filter-name">Category</span>
+              <img src="img/arrrow-up.svg" alt="" />
+            </div>
+            <div class="multiple-choice-item">
+              <input type="checkbox" name="treats" />
+              <span>Treats</span>
+            </div>
+            <div class="multiple-choice-item">
+              <input type="checkbox" name="toys" />
+              <span>Toys</span>
+            </div>
+            <div class="multiple-choice-item">
+              <input type="checkbox" name="clothing" />
+              <span>Clothing</span>
+            </div>
+            <div class="multiple-choice-item">
+              <input type="checkbox" name="accesories" />
+              <span>Accessories</span>
+            </div>
+          </div>
+          <div class="multiple-choice-filter">
+            <div class="filter-header">
+              <span class="filter-name">Brand</span>
+              <img src="img/arrrow-up.svg" alt="" />
+            </div>
+
+            <div class="multiple-choice-item">
+              <input type="checkbox" name="brand1" />
+              <span>Brand 1</span>
+            </div>
+            <div class="multiple-choice-item">
+              <input type="checkbox" name="brand2" />
+              <span>Brand 2</span>
+            </div>
+          </div>
+          <div class="bool-choice-filter">
+            <span class="filter-name">Only with images</span>
+            <input type="checkbox" name="images-only" />
+          </div>
+          <button id="submit-btn" class="button" type="submit" name="submit">
+            <img src="img/search-icon.svg" alt="" /><span>Search</span>
+          </button>
+        </form>
+        <section id="goods">
+          <div class="good-item" id="good1">
+            <img class="good-pic" src="" alt="" /><span
+              class="good-price"
+            ></span>
+            <span class="good-name"></span>
+            <button class="button">
+              <img class="good-pic" src="img/check-mark-icon.svg" alt="" /><span
+                >To cart</span
+              >
+            </button>
+            <span class="not-avai">Not available</span>
+          </div>
+          <div class="good-item" id="good2">
+            <img class="good-pic" src="" alt="" /><span
+              class="good-price"
+            ></span>
+            <span class="good-name"></span>
+            <button id="button" class="button">
+              <img class="good-pic" src="img/check-mark-icon.svg" alt="" /><span
+                >To cart</span
+              >
+            </button>
+            <span class="not-avai">Not available</span>
+          </div>
+          <div class="good-item" id="good3">
+            <img src="" alt="" /><span class="good-price"></span>
+            <a href="item.html" class="good-name" id="has-link"></a>
+            <button class="button">
+              <img class="good-pic" src="img/check-mark-icon.svg" alt="" /><span
+                >To cart</span
+              >
+            </button>
+            <span class="not-avai">Not available</span>
+          </div>
+        </section>
+      </main>
+      <script src="js/catalogue.js"></script>
+    </div>
+  </body>
+</html>
