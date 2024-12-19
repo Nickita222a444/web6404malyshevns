@@ -20,7 +20,7 @@
         </div>
       </header>
       <main>
-        <section id="filters-bar">
+        <form id="filters-bar" action="/filter/" method="POST">
           <span>Filters</span>
           <div class="multiple-choice-filter">
             <div class="filter-header">
@@ -28,19 +28,19 @@
               <img src="img/arrrow-up.svg" alt="" />
             </div>
             <div class="multiple-choice-item">
-              <input type="checkbox" />
+              <input type="checkbox" name="treats" />
               <span>Treats</span>
             </div>
             <div class="multiple-choice-item">
-              <input type="checkbox" />
+              <input type="checkbox" name="toys" />
               <span>Toys</span>
             </div>
             <div class="multiple-choice-item">
-              <input type="checkbox" />
+              <input type="checkbox" name="clothing" />
               <span>Clothing</span>
             </div>
             <div class="multiple-choice-item">
-              <input type="checkbox" />
+              <input type="checkbox" name="accesories" />
               <span>Accessories</span>
             </div>
           </div>
@@ -51,22 +51,22 @@
             </div>
 
             <div class="multiple-choice-item">
-              <input type="checkbox" />
+              <input type="checkbox" name="brand1" />
               <span>Brand 1</span>
             </div>
             <div class="multiple-choice-item">
-              <input type="checkbox" />
+              <input type="checkbox" name="brand2" />
               <span>Brand 2</span>
             </div>
           </div>
           <div class="bool-choice-filter">
             <span class="filter-name">Only with images</span>
-            <input type="checkbox" />
+            <input type="checkbox" name="images-only" />
           </div>
-          <button class="button">
+          <button id="submit-btn" class="button" type="submit" name="submit">
             <img src="img/search-icon.svg" alt="" /><span>Search</span>
           </button>
-        </section>
+        </form>
         <section id="goods">
           <div class="good-item">
             <img class="good-pic" src="img/toy-doggy.svg" alt="" /><span

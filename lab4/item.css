@@ -64,3 +64,39 @@ main {
 img {
   height: 700px;
 }
+#review {
+  margin-top: 20px;
+  width: 60%;
+}
+
+#review label {
+  font-size: 20px;
+}
+
+#review * {
+  display: block;
+}
+
+#review input,
+#review textarea {
+  width: 100%;
+}
+
+#review textarea {
+  resize: none;
+  height: 10vh;
+}
+
+#review span {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+#review-submit {
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
