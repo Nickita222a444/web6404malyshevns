@@ -38,19 +38,19 @@
               </tr>
             </table>
           </div>
-          <form id="review">
+          <form id="review" action="/send_review/" method="POST">
             <span>Bought it? Send a review</span>
             <label>Name</label>
-            <input type="text" name="" id="" />
+            <input type="text" name="name" />
             <label>Rating</label>
-            <input type="number" name="" id="" min="0" max="5" />
+            <input type="number" name="rating" />
             <label>Text</label>
-            <textarea name="" id=""></textarea>
+            <textarea name="review"></textarea>
             <button type="submit" id="review-submit">Send</button>
           </form>
         </div>
       </main>
-      <script src="js/catalogue.js"></script>
+      <script src="js/review.js"></script>
     </div>
   </body>
 </html>

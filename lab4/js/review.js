@@ -1,14 +1,26 @@
-const filters_form = document.getElementById("filters-bar");
+const filters_form = document.getElementById("review");
 filters_form.addEventListener("submit", formHandler);
 
-function formHandler(event) {
+function formHandler() {
   const elms = filters_form.elements;
 
-  //   for (let i = 0; i < elms.length; ++i) {
-  //     alert(elms[i]);
-  //   }
+  let EMPTY_FIELD_FLAG = false;
   Array.from(elms).forEach((el) => {
-    const { name, value } = el;
-    alert(value);
+    const { type } = el;
+
+    if (type !== "submit") {
+      const { name, value } = el;
+
+      if (name === "rating") {
+        if (!((value ^ 0) !== value && value >= 0 && value <= 5))
+          alert("Wrong rating inputed!");
+      } else {
+        if (!value) {
+          EMPTY_FIELD_FLAG = true;
+        }
+      }
+    }
   });
+
+  if (EMPTY_FIELD_FLAG) alert("Empty field inputed!");
 }
