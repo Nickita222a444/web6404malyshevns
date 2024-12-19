@@ -53,6 +53,7 @@ body {
   padding-bottom: 45px;
   vertical-align: middle;
   margin-top: 10vh;
+  box-shadow: 2px 0 44px rgba(0, 0, 0, 0.25);
 }
 
 #greeting-title {
@@ -72,8 +73,14 @@ body {
   background-color: #b1ddf1;
   border-radius: 50px;
   padding: 20px 18px;
-  margin-top: 10000vh;
   color: black;
+  box-shadow: 2px 4px 44px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-in-out;
+}
+
+#catalogue-link:hover {
+  background-color: #82e878;
+  color: #7605f7;
 }
 
 #greeting + div {
